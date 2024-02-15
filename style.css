@@ -1,0 +1,74 @@
+body {
+  background: linear-gradient(to left, #111, #00ff73);
+}
+.container {
+  padding: 64px;
+  margin: 64px;
+  background: #111;
+  color: #00ff73;
+  border-radius: 5px 10px 20px 30px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+}
+
+.perfil-foto {
+  max-height: 160px;
+  border-radius: 20px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border: 2px solid #00ff73;
+}
+.titulo {
+  margin-left: 16px;
+}
+.titulo h1 {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.projetos {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+  padding: 32px;
+  background: linear-gradient(230.65deg, #111, #333, #666);
+}
+
+.projetos-titulo {
+  list-style: none;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.projetos-item {
+  list-style-type: none;
+  line-height: 48px;
+}
+.projetos-item a {
+  text-decoration: none;
+  color: #00ff73;
+}
+
+.display {
+  display: inline-block;
+}
+.dev {
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+  border-right: 10px solid;
+  animation: typing 5s steps(12), cursor 0.4s step-end infinite alternate;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
